@@ -1,0 +1,28 @@
+.jumbo-header {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 90%;
+    /* background-image: url('./assets/header-top.png');
+    background-size: 100% 100%; */
+
+}
+
+.top-header {
+    grid-row: 1;
+  
+  
+}
+
+.name {
+    
+    text-align: left;
+    line-height: 5rem;
+    letter-spacing: -3px;
+    margin: 20% auto auto 20%;
+    font-size: 6rem;
+    color: rgb(0, 0, 0);
+  
+   
+}
