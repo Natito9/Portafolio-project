@@ -1,6 +1,7 @@
 import './style.css';
 import './reset.css';
 import './header.css';
+import './projects.css';
 
 
 window.addEventListener('scroll', function() {

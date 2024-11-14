@@ -2,7 +2,7 @@
     display: grid;
     grid-row: 1;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10% 90%
+    grid-template-rows: 10% 80%;
 
 }
 
@@ -16,20 +16,35 @@
 }
 
 .menu-list {
-   font-size: 1.5rem;
+   font-size: 1.1rem;
    list-style: none;
    display:flex;
    align-items: center;
    justify-content: space-around;
+   text-transform: uppercase;
+   
     
 }
 
-.bottom-header {
+
+li {
+    transition: transform 0.2s ease; 
+
+}
+
+
+li:hover {
+    transform: scale(1.2); 
+
+}
+
+.bottom-left-header {
     grid-column: 1;
     grid-row: 2;
+    
 }
+
 .name {
-   
     text-align: left;
     line-height: 5rem;
     letter-spacing: -3px;
@@ -37,5 +52,37 @@
     font-size: 6rem;
     color: rgb(0, 0, 0);
   
-   
+}
+
+.bottom-right-header {
+    grid-column: 2;
+    grid-row: 2;
+
+}
+
+.natalia-photo {
+    margin:auto;
+    margin-right: 10%;
+    width: 70%;
+    height: auto;
+
+}
+
+
+
+.my-projects-text  {
+    grid-row: 1;
+    grid-column: 1/3;
+    margin: auto;
+    align-self: center;
+    font-size: 2rem;
+    margin-bottom: 10%;
+    margin-top: 15%;
+    text-transform: uppercase;
+    -webkit-text-stroke: 3px black;
+    text-shadow: 1px 1px black;
+    line-height: 0.9;
+    color:transparent;
+    letter-spacing: 10px;
+    
 }

@@ -13,83 +13,13 @@ body {
     font-family: "Work Sans", sans-serif;
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows:  80vh 100vh 40vh 5vh;
+    grid-template-rows:  80vh 140vh 80vh 10vh;
     background-image: url('./assets/header-top.png'), url('./assets/header-after.png'); /* Two background images */
     background-repeat: no-repeat, no-repeat;
     background-size: 100% 500px, 100% 500px;
     background-position: center top, center 500px;
 }
 
-
-
-.p-container {
-   
-    background-size: 100% 100%;
-    grid-row: 2;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-
-}
-
-.p-container .project {
-    grid-column: auto;
-    grid-row: auto;
-    border-radius: 10px;
-    height: 350px;
-    width: 300px;
-    display:flex;
-    flex-direction: column;
-    font-size: 1rem;
-    align-items: center;
-    transition: transform 0.5s ease; 
-    text-transform: uppercase;
-    position: relative;
-    overflow: hidden;
-
-}
-
-.p-container .project:hover {
-    
-    transform: scale(1.05); 
-}
-
-.img-project {
-    width: 100%; 
-    max-width: 300px; 
-    height: auto;
-    object-fit: contain;
-    
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border: none;
-  
-}
-
-
-.project-title {
-    display: block;
-    opacity: 0; /* Start hidden */
-    position: absolute; /* Position them absolutely within the project container */
-    left: 0; /* Align to the left */
-    right: 0; /* Align to the right */
-    bottom: -30px; /* Start below the project container */
-    transition: bottom 0.5s ease, opacity 0.5s ease;
-   text-align: center;
-
-}
-.project-title:hover {
-    opacity: 1; /* Show on hover */
-    top: 0;
-    transition-delay: 0.15s;
-}
-
-.p-container .project:hover .project-title {
-    opacity: 1; /* Show on hover */
-    bottom: 10px; /* Move to the visible position on hover */
-    transition-delay: 0.15s;
-}
 
 .quote-container {
     visibility: hidden;
@@ -101,16 +31,24 @@ body {
     margin: 0 auto;
     font-size: 1.5rem;
     opacity: 0;
-    transition: opacity 1.5s ease-in-out 0.1s;
- 
-   
-   
+    transition: opacity 1.2s ease-in-out 0.1s;
+    margin-top: 20%;
+  
 }
 
 
 .footer {
 
     grid-row: 4/5;
-    border: solid black;
+    border-top: solid black;
+    
+    
+}
+
+.contact-text {
+   text-align: center;
+    margin:auto;
+    margin-top: 10px;
+    font-size: 1.5rem;
 }
 
